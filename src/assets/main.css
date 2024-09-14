@@ -1,0 +1,36 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#app {
+  margin: 0 0;
+  width : 100%;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: rgb(21, 37, 38);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(198, 90%, 55%, 0.253);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  /* #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  } */
+}
