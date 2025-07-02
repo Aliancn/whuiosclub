@@ -31,6 +31,26 @@ const router = createRouter({
       path : '/awards',
       name : 'Awards',
       component : () => import('../views/AwardView.vue')
+    },
+    {
+      path: '/about-us',
+      name: 'AboutUs',
+      component: () => import('../views/AboutUsView.vue')
+    },
+    {
+      path: '/competition',
+      name: 'Competition',
+      component: () => import('../views/CompetitionView.vue')
+    },
+    {
+      path: '/activities',
+      name: 'Activities',
+      component: () => import('../views/ActivitiesView.vue')
+    },
+    {
+      path: '/message-board',
+      name: 'MessageBoard',
+      component: () => import('../views/MessageBoardView.vue')
     }
   ]
 })

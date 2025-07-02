@@ -1,14 +1,21 @@
 <template>
     <!-- app -->
-  <div class="min-h-screen bg-gradient-to-r from-blue-50 via-white to-blue-50 py-10">
-    <div class="max-w-7xl mx-auto px-4">
-      <!-- 返回主页按钮 -->
-      <div class="max-w-7xl mx-auto px-4 flex justify-between items-center mb-8">
-        <NButton type="primary" size="large" @click="goHome"> 返回主页 </NButton>
-        <h1 class="text-5xl font-extrabold text-center mb-0 text-gray-900 drop-shadow-md">
-          社团荣誉奖状
-        </h1>
-      </div>
+  <div class="min-h-screen bg-gray-50">
+    <!-- Header -->
+    <HeaderView />
+    
+    <div class="bg-gradient-to-r from-blue-50 via-white to-blue-50 py-10">
+      <div class="max-w-7xl mx-auto px-4">
+        <!-- 返回按钮和标题 -->
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center mb-8">
+          <div class="flex space-x-3">
+            <NButton type="primary" size="large" @click="goBack"> 返回 </NButton>
+            <NButton type="default" size="large" @click="goHome"> 返回主页 </NButton>
+          </div>
+          <h1 class="text-5xl font-extrabold text-center mb-0 text-gray-900 drop-shadow-md">
+            社团荣誉奖状
+          </h1>
+        </div>
 
       <!-- 奖状展示网格布局 -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -31,11 +38,14 @@
         <!-- </transition-group> -->
       </div>
     </div>
+    </div>
   </div>
 </template>
 
 <script>
 import { NCard, NImage, NButton } from 'naive-ui'
+import HeaderView from './HeaderView.vue'
+
 export default {
   data() {
     return {
@@ -102,14 +112,23 @@ export default {
     viewAward(award) {
       alert(`查看奖状: ${award.title}`)
     },
+    goBack() {
+      // 检查是否有历史记录可以返回
+      if (window.history.length > 1) {
+        this.$router.go(-1); // 返回上一个页面
+      } else {
+        this.$router.push('/'); // 没有历史记录时返回主页
+      }
+    },
     goHome() {
-      this.$router.push('/');
+      this.$router.push('/'); // 返回主页
     },
   },
   components: {
     NCard,
     NImage,
-    NButton
+    NButton,
+    HeaderView
   }
 }
 </script>
