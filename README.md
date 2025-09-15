@@ -9,9 +9,7 @@ welcome to join us!👋
 
 # development
 ```bash
-cd whuiosclub
-
-sudo cnpm install
+npm install
 
 npm run dev
 ```
