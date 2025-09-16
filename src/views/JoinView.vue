@@ -6,18 +6,18 @@
     
     <div class="join-us">
       <div class="container">
-        <h1>加入我们</h1>
+        <h1>来不及多说了！进群详谈！！</h1>
         <p>欢迎加入 iOS Club 的大家庭！🎉</p>
         <p>我们正在招募新成员，快加入我们的 QQ 群，参与我们的社团活动、学习编程、一起讨论项目吧！</p>
 
 
         <div class="group-info flex flex-col justify-center items-center">
           <img
-            src="@/assets/img/iosclub2024.jpg"
+            src="@/assets/img/new.png"
             alt="QQ群二维码"
             class="qr-code rounded-lg border border-gray-300 mx-auto"
           />
-          <p class="mt-4 leading-relaxed text-3xl md:text-4xl text-primary text-center">招新QQ群号 : 810971904</p>
+          <p class="mt-4 leading-relaxed text-3xl md:text-4xl text-primary text-center">招新QQ群号 : 806162657</p>
         </div>
 
         <p class="mt-6">使用 QQ 扫码，或通过群号直接加入我们！我们期待与你共同成长！😊</p>
@@ -45,24 +45,30 @@ const back = () => {
 
 <style scoped>
 .join-us {
-  text-align: center;
+  min-height: calc(100vh - 64px); /* 64px为Header高度，按实际调整 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 40px 20px;
   background-color: #f4f4f9;
   color: #333;
 }
 
 .container {
+  width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  text-align: center; /* 新增：让所有文字居中 */
 }
 
 .group-info {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .qr-code {
   margin-top: 20px;
-  max-width: 200px;
+  max-width: 300px;
   width: 100%;
   height: auto;
 }

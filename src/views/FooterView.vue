@@ -9,37 +9,53 @@
       <!-- iOS Club 信息 -->
       <div class="footer-column lg:ml-4">
         <h4>iOS Club</h4>
-        <p>WUHAN University</p>
+        <p>
+          <a href="https://www.whu.edu.cn" target="_blank" rel="noopener" class="footer-link">
+            WUHAN University
+          </a>
+        </p>
+        <p>
+          <a href="https://jluios.club/" target="_blank" rel="noopener" class="footer-link">
+            JLU iOS Club
+          </a>
+        </p>
       </div>
       <!-- 我们的活动 -->
       <div class="footer-column">
         <h4>Our Activities</h4>
         <ul>
-          <li>社团课程</li>
-          <li>活动相簿</li>
-          <li>社团活动</li>
+          <li><a href="/courses" class="footer-link">社团课程</a></li>
+          <li><a href="/album" class="footer-link">活动相簿</a></li>
+          <li><a href="/activities" class="footer-link">社团活动</a></li>
         </ul>
       </div>
       <!-- 我们的社团 -->
       <div class="footer-column">
         <h4>Our Club</h4>
         <ul>
-          <li>历届社团成员</li>
-          <li>竞赛得奖</li>
-          <li>相关单位</li>
+          <li><a href="/awards" class="footer-link">竞赛得奖</a></li>
+          <li><a href="/partners" class="footer-link">相关单位</a></li>
         </ul>
       </div>
       <!-- 社区链接 -->
       <div class="footer-column">
         <h4>Community</h4>
         <ul>
-          <li><i class="fas fa-envelope"></i> E-mail</li>
-          <li><i class="fab fa-discord"></i> Discord</li>
+          <li>
+            <a href="mailto:your@email.com" class="footer-link">
+              <i class="fas fa-envelope"></i> E-mail
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.com/" target="_blank" rel="noopener" class="footer-link">
+              <i class="fab fa-discord"></i> Discord
+            </a>
+          </li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>iOS Club 2017 - 2024 © All rights reserved</p>
+      <p>iOS Club 2017 - 2026 © All rights reserved</p>
     </div>
   </footer>
 </template>
@@ -97,6 +113,15 @@ export default {
   margin-top: 28px;
   font-size: 14px;
   color: white;
+}
+
+.footer-link {
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-link:hover {
+  color: #ffd700;
 }
 
 /* 响应式优化 */

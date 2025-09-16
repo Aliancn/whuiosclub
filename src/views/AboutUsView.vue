@@ -30,8 +30,8 @@
               <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
                 <img src="@/assets/img/site1.png" alt="主活动室" class="w-full h-full object-cover" />
               </div>
-              <h3 class="text-lg font-semibold text-gray-800">主活动室</h3>
-              <p class="text-gray-600 text-sm">宽敞明亮的主活动室，配备现代化设施，为社团活动提供舒适的环境。</p>
+              <h3 class="text-lg font-semibold text-gray-800"></h3>
+              <p class="text-gray-600 text-sm"></p>
             </div>
             
             <!-- 图片2 -->
@@ -39,8 +39,8 @@
               <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
                 <img src="@/assets/img/site2.png" alt="讨论区域" class="w-full h-full object-cover" />
               </div>
-              <h3 class="text-lg font-semibold text-gray-800">.</h3>
-              <p class="text-gray-600 text-sm">.</p>
+              <h3 class="text-lg font-semibold text-gray-800"></h3>
+              <p class="text-gray-600 text-sm"></p>
             </div>
             
             <!-- 图片3 -->
@@ -48,8 +48,8 @@
               <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
                 <img src="@/assets/img/site3.png" alt="技术工作坊" class="w-full h-full object-cover" />
               </div>
-              <h3 class="text-lg font-semibold text-gray-800">.</h3>
-              <p class="text-gray-600 text-sm">占位占位</p>
+              <h3 class="text-lg font-semibold text-gray-800"></h3>
+              <p class="text-gray-600 text-sm"></p>
             </div>
             
             <!-- 图片4 -->
@@ -57,8 +57,8 @@
               <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
                 <img src="@/assets/img/site4.png" alt="展示区域" class="w-full h-full object-cover" />
               </div>
-              <h3 class="text-lg font-semibold text-gray-800">展示区域</h3>
-              <p class="text-gray-600 text-sm">占位占位</p>
+              <h3 class="text-lg font-semibold text-gray-800"></h3>
+              <p class="text-gray-600 text-sm"></p>
             </div>
             
 
@@ -69,16 +69,16 @@
               <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
                 <img src="@/assets/img/site6.png" alt="会议室" class="w-full h-full object-cover" />
               </div>
-              <h3 class="text-lg font-semibold text-gray-800">会议室</h3>
-              <p class="text-gray-600 text-sm">占位</p>
+              <h3 class="text-lg font-semibold text-gray-800"></h3>
+              <p class="text-gray-600 text-sm"></p>
             </div>
           </div>
           
           <div class="grid md:grid-cols-2 gap-8">
             <!-- 活动室1 -->
             <div class="space-y-4">
-              <h3 class="text-xl font-semibold">主活动室</h3>
-              <p class="text-gray-600 mb-4">位于大创中心</p>
+              <h3 class="text-xl font-semibold">主活动室（第一张）</h3>
+              <p class="text-gray-600 mb-4">大创中心</p>
               <a 
                 href="https://cn.bing.com/maps?&ty=0&rtp=~pos.30.541632_114.361702__%E6%AD%A6%E6%B1%89%E5%A4%A7%E5%AD%A6%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%88%9B%E6%96%B0%E5%88%9B%E4%B8%9A%E5%AE%9E%E8%B7%B5%E4%B8%AD%E5%BF%83__e_&mode=m&u=1&tt=%E8%B7%AF%E7%BA%BF&tsts0=%2526ty%253D0%2526rtp%253D~pos.30.541632_114.361702__%2525E6%2525AD%2525A6%2525E6%2525B1%252589%2525E5%2525A4%2525A7%2525E5%2525AD%2525A6%2525E5%2525A4%2525A7%2525E5%2525AD%2525A6%2525E7%252594%25259F%2525E5%252588%25259B%2525E6%252596%2525B0%2525E5%252588%25259B%2525E4%2525B8%25259A%2525E5%2525AE%25259E%2525E8%2525B7%2525B5%2525E4%2525B8%2525AD%2525E5%2525BF%252583__e_%2526mode%253Dm%2526u%253D1&tstt0=%E8%B7%AF%E7%BA%BF&cp=p2q7b0thw73j&lvl=14.5&pi=0&ftst=0&ftics=False&v=2&sV=2&form=S00027"
                 target="_blank"

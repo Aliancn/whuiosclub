@@ -83,31 +83,40 @@
 
         <!-- 近期竞赛 -->
         <section class="mb-16">
-          <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">近期竞赛</h2>
+          <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">竞赛资源</h2>
           <div class="space-y-6">
             <n-card hoverable>
               <div class="p-6">
                 <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">2024年度iOS创新应用设计大赛</h3>
-                    <p class="text-gray-600">面向全校学生的iOS应用创新设计竞赛，主题为"智慧校园"</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                      <a
+  href="https://developer.apple.com/cn/swift-student-challenge/"
+  target="_blank"
+  rel="noopener"
+  class="footer-link"
+>
+  WWDC-Swift学生挑战赛
+</a>
+                    </h3>
+                    <p class="text-gray-600">每年的二或三月份，苹果面向全球举办 WWDC-Swift 学生挑战赛，选拔 350 名开发者给予奖金</p>
                   </div>
                   <div class="mt-4 md:mt-0">
                     <span class="inline-block px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">进行中</span>
                   </div>
                 </div>
                 <div class="flex flex-wrap gap-4 text-sm text-gray-500">
-                  <div class="flex items-center">
+                  <!-- <div class="flex items-center">
                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                     </svg>
                     报名截止：2024年8月15日
-                  </div>
+                  </div> -->
                   <div class="flex items-center">
                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 0h10a2 2 0 002-2V7a2 2 0 00-2-2H9a2 2 0 00-2 2v2"></path>
                     </svg>
-                    奖金：一等奖 5000元
+                    为期一年的 Apple Developer Program 会员资格、参加 App Development with Swift 认证考试的免费凭证，以及 Apple 准备的特别礼物！
                   </div>
                 </div>
               </div>
@@ -117,7 +126,16 @@
               <div class="p-6">
                 <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">全国大学生移动应用创新大赛</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                      <a
+                        href="https://www.appcontest.net/"
+                        target="_blank"
+                        rel="noopener"
+                        class="footer-link"
+                      >
+                        移动应用创新赛
+                      </a>
+                    </h3>
                     <p class="text-gray-600">教育部主办的全国性移动应用开发竞赛，iOS赛道</p>
                   </div>
                   <div class="mt-4 md:mt-0">
@@ -129,7 +147,7 @@
                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                     </svg>
-                    开始时间：2024年9月1日
+                    开始时间：每年9月1日
                   </div>
                   <div class="flex items-center">
                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -143,37 +161,7 @@
           </div>
         </section>
 
-        <!-- 获奖经验分享 -->
-        <section class="mb-16">
-          <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">获奖经验分享</h2>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <n-card class="h-full">
-              <div class="p-6">
-                <div class="flex items-start space-x-4">
-                  <img src="@/assets/img/avatar_placeholder.png" alt="学长头像" class="w-12 h-12 rounded-full object-cover" />
-                  <div class="flex-1">
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">张同学 - 全国一等奖获得者</h3>
-                    <p class="text-gray-600 mb-3">"参加竞赛不仅提升了我的技术能力，更重要的是学会了团队协作和项目管理。建议大家从校内竞赛开始，逐步挑战更高级别的比赛。"</p>
-                    <div class="text-sm text-blue-600 font-medium">2023年全国大学生程序设计竞赛 一等奖</div>
-                  </div>
-                </div>
-              </div>
-            </n-card>
 
-            <n-card class="h-full">
-              <div class="p-6">
-                <div class="flex items-start space-x-4">
-                  <img src="@/assets/img/avatar_placeholder.png" alt="学姐头像" class="w-12 h-12 rounded-full object-cover" />
-                  <div class="flex-1">
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">李同学 - 创新应用奖获得者</h3>
-                    <p class="text-gray-600 mb-3">"iOS开发竞赛让我有机会将课堂知识应用到实际项目中。通过比赛，我不仅获得了奖项，还找到了心仪的实习机会。"</p>
-                    <div class="text-sm text-green-600 font-medium">2023年iOS创新应用设计大赛 特等奖</div>
-                  </div>
-                </div>
-              </div>
-            </n-card>
-          </div>
-        </section>
 
         <!-- 行动号召 -->
         <section class="text-center">

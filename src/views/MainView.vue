@@ -9,7 +9,13 @@
       </div>
       <div class="hero-content">
         <div class="hero-text-container center-hero-text">
-            <p class="hero-subtitle main-center-title main-black">武汉大学 iOS Club</p>
+          <p class="hero-subtitle main-center-title main-black">武汉大学 iOS Club</p>
+          <button
+            class="join-btn"
+            @click="goToJoin"
+          >
+            JOIN
+          </button>
         </div>
       </div>
     </section>
@@ -37,10 +43,10 @@
       </section>
 
     <!-- about -->
-    <section class="gap-6 mt-12">
+    <section class="gap-6 mt-0">
       <n-card size="large" class="px-6 md:px-12 flex justify-center items-center" :bordered="false">
         <section class="grid grid-cols-1 md:grid-cols-[5fr_3fr] gap-6">
-          <img class="sucai1-img" src="@/assets/img/sucai1.png" alt="iOS Club" />
+          <img class="sucai1-img" src="@/assets/img/page.png" alt="iOS Club" />
           <div class="wel-text">
             <div class="text-left mb-8">
               <h1 class="text-4xl font-bold text-foreground">About</h1>
@@ -64,31 +70,12 @@
   </div>
 </template>
 
-<script>
-import { NCard, NButton } from 'naive-ui';
-import { useRouter } from 'vue-router';
-
-export default {
-  name: 'MainView',
-  components: {
-    NCard,
-    NButton,
-  },
-  emits: ['open-search'],
-  setup(props, { emit }) {
-    const router = useRouter();
-    const join = () => {
-      router.push('/join');
-    };
-    const learnMore = () => {
-      emit('open-search');
-    };
-    return {
-      join,
-      learnMore,
-    };
-  },
-};
+<script setup>
+import { useRouter } from 'vue-router'
+const router = useRouter()
+function goToJoin() {
+  router.push('/join')
+}
 </script>
 
 <style lang="css" scoped>
@@ -298,5 +285,24 @@ export default {
   max-width: 30rem;
   height: auto;
   pointer-events: none;
+}
+
+.join-btn {
+  margin-top: 2rem;
+  padding: 0.75rem 2.5rem;
+  font-size: 1.25rem;
+  background: linear-gradient(90deg, #ff9800 0%, #ffcc00 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(255, 152, 0, 0.15);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.join-btn:hover {
+  background: linear-gradient(90deg, #ffcc00 0%, #ff9800 100%);
+  transform: translateY(-2px) scale(1.04);
 }
 </style>

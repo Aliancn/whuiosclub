@@ -67,13 +67,13 @@
                     <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                     </svg>
-                    每月2-3次
+                    每月1-2次
                   </div>
                   <div class="flex items-center text-sm text-gray-500">
                     <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                     </svg>
-                    计算机学院
+                    iOS club机房
                   </div>
                 </div>
               </div>
@@ -246,13 +246,13 @@
                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                     </svg>
-                    7月6日 14:00-16:00
+                    10月中旬
                   </div>
                   <div class="flex items-center">
                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                     </svg>
-                    计算机学院301教室
+                    机房
                   </div>
                 </div>
               </div>
@@ -280,13 +280,13 @@
                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
                     </svg>
-                    限20个团队
+                    不限团队
                   </div>
                 </div>
               </div>
             </n-card>
 
-            <n-card hoverable>
+            <!-- <n-card hoverable>
               <div class="p-6">
                 <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <div>
@@ -312,39 +312,11 @@
                   </div>
                 </div>
               </div>
-            </n-card>
+            </n-card> -->
           </div>
         </section>
 
-        <!-- 活动回顾 -->
-        <section class="mb-16">
-          <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">精彩回顾</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <n-card hoverable>
-              <img src="@/assets/img/sucai1.png" alt="活动照片" class="w-full h-48 object-cover" />
-              <div class="p-4">
-                <h3 class="text-lg font-semibold text-gray-900 mb-2">春季技术分享会</h3>
-                <p class="text-gray-600 text-sm">邀请到了苹果公司工程师分享最新的iOS开发技术</p>
-              </div>
-            </n-card>
 
-            <n-card hoverable>
-              <img src="@/assets/img/develop.png" alt="活动照片" class="w-full h-48 object-cover" />
-              <div class="p-4">
-                <h3 class="text-lg font-semibold text-gray-900 mb-2">编程马拉松获奖作品</h3>
-                <p class="text-gray-600 text-sm">同学们开发的智能学习助手获得了一等奖</p>
-              </div>
-            </n-card>
-
-            <n-card hoverable>
-              <img src="@/assets/img/collection.jpg" alt="活动照片" class="w-full h-48 object-cover" />
-              <div class="p-4">
-                <h3 class="text-lg font-semibold text-gray-900 mb-2">企业参访合影</h3>
-                <p class="text-gray-600 text-sm">参访腾讯武汉研发中心，了解企业级iOS开发</p>
-              </div>
-            </n-card>
-          </div>
-        </section>
 
         <!-- 行动号召 -->
         <section class="text-center">
