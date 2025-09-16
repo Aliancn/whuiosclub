@@ -4,18 +4,13 @@
     <!-- 全屏展示区域 -->
     <section class="hero-section">
       <div class="hero-background">
-        <img src="@/assets/img/tests.jpeg" alt="iOS Club Background" class="hero-image" />
+        <img src="@/assets/img/tests.png" alt="iOS Club Background" class="hero-image" />
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
-        <div class="hero-text-container">
-          <h1 class="hero-title">创新・分享・成长</h1>
-          <p class="hero-subtitle">武汉大学 iOS Club</p>
+        <div class="hero-text-container center-hero-text">
+            <p class="hero-subtitle main-center-title main-black">武汉大学 iOS Club</p>
         </div>
-        <!-- <div class="scroll-indicator">
-          <div class="scroll-arrow">↓</div>
-          <p class="scroll-text">向下滑动探索更多</p>
-        </div> -->
       </div>
     </section>
 
@@ -82,15 +77,12 @@ export default {
   emits: ['open-search'],
   setup(props, { emit }) {
     const router = useRouter();
-    
     const join = () => {
       router.push('/join');
     };
-    
     const learnMore = () => {
       emit('open-search');
     };
-    
     return {
       join,
       learnMore,
@@ -111,13 +103,15 @@ export default {
   justify-content: center;
 }
 
+
 .hero-background {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 1;
+  overflow: hidden;
 }
 
 .hero-image {
@@ -133,60 +127,77 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     45deg,
     rgba(0, 0, 0, 0.4),
     rgba(0, 0, 0, 0.2)
-  );
+  ); */
   z-index: 2;
 }
 
+
 .hero-content {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: white;
   animation: fadeInUp 1.5s ease-out;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 10vh; /* 调整底部距离 */
+  margin: 0 auto;
+  padding: 0;
 }
 
 .hero-text-container {
   text-align: center;
+  width: 100vw;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 1vw;
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   animation: slideInFromTop 1s ease-out;
   font-family: 'Brush Script MT', 'Lucida Handwriting', 'Apple Chancery', cursive, serif;
   letter-spacing: 0.05em;
 }
+.main-red {
+  color: #ff3b30;
+  text-shadow: 2px 2px 8px rgba(255,59,48,0.18);
+}
+.main-yellow {
+  color: #ffcc00;
+  text-shadow: 2px 2px 8px rgba(255,204,0,0.18);
+}
+.main-blue {
+  color: #007aff;
+  text-shadow: 2px 2px 8px rgba(0,122,255,0.18);
+}
 
-.hero-subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 3rem;
-  opacity: 0.9;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+.hero-subtitle.main-center-title {
+  font-size: 6rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.98;
   animation: slideInFromBottom 1s ease-out 0.5s both;
   font-family: 'Brush Script MT', 'Lucida Handwriting', 'Apple Chancery', cursive, serif;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 
-.scroll-indicator {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  animation: fadeInUp 1s ease-out 1s both;
+@media (max-width: 768px) {
+  .hero-subtitle.main-center-title {
+    font-size: 2.2rem;
+  }
 }
+
 
 .scroll-arrow {
   font-size: 2rem;
@@ -250,13 +261,18 @@ export default {
   .hero-title {
     font-size: 2.5rem;
   }
-  
   .hero-subtitle {
     font-size: 1.2rem;
   }
-  
   .hero-content {
-    padding-bottom: 10vh; /* 移动端减少底部距离 */
+    padding-bottom: 10vh;
+    width: 100vw;
+    max-width: 100vw;
+  }
+  .hero-text-container {
+    width: 100vw;
+    max-width: 99vw;
+    padding: 0 1vw;
   }
 }
 

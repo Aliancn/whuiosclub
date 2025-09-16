@@ -1,7 +1,7 @@
 <template>
   <!-- app -->
   <header
-    class="flex items-center justify-between px-6 py-1 shadow-lg w-full backdrop-blur bg-transparent"
+    class="flex items-center justify-between px-2 md:px-6 py-1 shadow-lg w-full max-w-[1920px] mx-auto backdrop-blur bg-transparent"
   >
     <!-- Logo、搜索和标题 -->
     <div class="flex items-center flex-shrink-0 space-x-3">
@@ -57,7 +57,7 @@
       class="lg:flex lg:items-center lg:ml-auto"
     >
       <ul
-        class="flex flex-col lg:flex-row lg:space-x-8 space-y-2 lg:space-y-0 items-center mt-4 lg:mt-0"
+        class="flex flex-col lg:flex-row lg:space-x-14 space-y-2 lg:space-y-0 items-center mt-4 lg:mt-0 max-w-[1800px]"
       >
         <li>
           <a href="/" class="text-base font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200 drop-shadow-sm">主页</a>
@@ -79,9 +79,9 @@
             v-show="showAboutMenu" 
             class="absolute top-full right-0 mt-2 w-32 bg-white rounded-lg shadow-lg border border-gray-200 z-50"
           >
-            <a href="/awards" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-t-lg">荣誉奖项</a>
-            <a href="/about-us" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">了解我们</a>
-            <a href="#" @click="join" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer rounded-b-lg">加入我们</a>
+            <a href="/about-us" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-t-lg">了解我们</a>
+            <a href="#" @click="join" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">加入我们</a>
+            <a href="/awards" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-b-lg">荣誉奖项</a>
           </div>
         </li>
         
@@ -103,7 +103,7 @@
           >
             <a href="/competition" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-t-lg">竞赛介绍</a>
             <a href="/activities" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">社团活动</a>
-            <a href="/message-board" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-b-lg">留言板</a>
+
           </div>
         </li>
         
@@ -227,14 +227,14 @@
                 </div>
               </button>
               <button 
-                @click="navigateTo('/message-board')"
+
                 class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-100 transition flex items-center"
               >
                 <svg class="w-4 h-4 mr-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
                 </svg>
                 <div>
-                  <div class="font-medium">留言板</div>
+
                   <div class="text-xs text-gray-500">成员交流和讨论</div>
                 </div>
               </button>
@@ -427,9 +427,7 @@ const searchInPages = (query) => {
       category: 'activities'
     },
     {
-      title: '留言板',
-      path: '/message-board',
-      content: '留言板 学习心得 建议反馈 问题求助 资源分享 技术交流 Swift SwiftUI Core Data iOS开发 编程马拉松 设计资源 学习路径 社团讨论',
+
       category: 'messageboard'
     }
   ]

@@ -7,13 +7,13 @@
     <div class="bg-gradient-to-r from-blue-50 via-white to-blue-50 py-10">
       <div class="max-w-7xl mx-auto px-4">
         <!-- 返回按钮和标题 -->
-        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center mb-8">
+        <div class="max-w-7xl mx-auto px-4 flex items-center mb-8">
           <div class="flex space-x-3">
             <NButton type="primary" size="large" @click="goBack"> 返回 </NButton>
             <NButton type="default" size="large" @click="goHome"> 返回主页 </NButton>
           </div>
-          <h1 class="text-5xl font-extrabold text-center mb-0 text-gray-900 drop-shadow-md">
-            社团荣誉奖状
+          <h1 class="text-5xl font-extrabold text-center mb-0 text-gray-900 drop-shadow-md mx-auto">
+            荣誉奖状
           </h1>
         </div>
 
